@@ -1,19 +1,18 @@
 //
-//  ViewController.m
+//  HelpDetailView.m
 //  Assignment
 //
-//  Created by DK on 12/2/13.
+//  Created by DK on 12/3/13.
 //  Copyright (c) 2013 DK. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HelpDetailView.h"
 
-@interface ViewController ()
+@interface HelpDetailView ()
 
 @end
 
-@implementation ViewController
-@synthesize navi;
+@implementation HelpDetailView
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +25,6 @@
 
 - (void)viewDidLoad
 {
-    [self.view addSubview:navi.view];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

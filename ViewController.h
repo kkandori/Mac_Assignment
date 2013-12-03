@@ -10,4 +10,5 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic,retain) IBOutlet UINavigationController *navi;
 @end

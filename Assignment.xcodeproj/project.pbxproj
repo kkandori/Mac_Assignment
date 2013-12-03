@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4299DF68184DCCCD00F7B7CB /* TimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4299DF66184DCCCD00F7B7CB /* TimerView.m */; };
+		4299DF69184DCCCD00F7B7CB /* TimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4299DF67184DCCCD00F7B7CB /* TimerView.xib */; };
+		4299DF6D184DCCF000F7B7CB /* HelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4299DF6B184DCCF000F7B7CB /* HelpView.m */; };
+		4299DF6E184DCCF000F7B7CB /* HelpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4299DF6C184DCCF000F7B7CB /* HelpView.xib */; };
+		4299DF73184DCD4100F7B7CB /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4299DF71184DCD4100F7B7CB /* AboutView.m */; };
+		4299DF74184DCD4100F7B7CB /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4299DF72184DCD4100F7B7CB /* AboutView.xib */; };
+		4299DF78184DCD5F00F7B7CB /* HelpDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4299DF76184DCD5F00F7B7CB /* HelpDetailView.m */; };
+		4299DF79184DCD5F00F7B7CB /* HelpDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4299DF77184DCD5F00F7B7CB /* HelpDetailView.xib */; };
+		4299DF7D184DCF6200F7B7CB /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4299DF7B184DCF6200F7B7CB /* RootView.m */; };
+		4299DF7E184DCF6200F7B7CB /* RootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4299DF7C184DCF6200F7B7CB /* RootView.xib */; };
 		42FD2EA7184CC83B009D0B26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD2EA6184CC83B009D0B26 /* Foundation.framework */; };
 		42FD2EA9184CC83B009D0B26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD2EA8184CC83B009D0B26 /* CoreGraphics.framework */; };
 		42FD2EAB184CC83B009D0B26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD2EAA184CC83B009D0B26 /* UIKit.framework */; };
@@ -51,6 +61,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4299DF65184DCCCD00F7B7CB /* TimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerView.h; sourceTree = "<group>"; };
+		4299DF66184DCCCD00F7B7CB /* TimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerView.m; sourceTree = "<group>"; };
+		4299DF67184DCCCD00F7B7CB /* TimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerView.xib; sourceTree = "<group>"; };
+		4299DF6A184DCCF000F7B7CB /* HelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpView.h; sourceTree = "<group>"; };
+		4299DF6B184DCCF000F7B7CB /* HelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpView.m; sourceTree = "<group>"; };
+		4299DF6C184DCCF000F7B7CB /* HelpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpView.xib; sourceTree = "<group>"; };
+		4299DF70184DCD4100F7B7CB /* AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutView.h; sourceTree = "<group>"; };
+		4299DF71184DCD4100F7B7CB /* AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutView.m; sourceTree = "<group>"; };
+		4299DF72184DCD4100F7B7CB /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutView.xib; sourceTree = "<group>"; };
+		4299DF75184DCD5F00F7B7CB /* HelpDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpDetailView.h; sourceTree = "<group>"; };
+		4299DF76184DCD5F00F7B7CB /* HelpDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpDetailView.m; sourceTree = "<group>"; };
+		4299DF77184DCD5F00F7B7CB /* HelpDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpDetailView.xib; sourceTree = "<group>"; };
+		4299DF7A184DCF6200F7B7CB /* RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		4299DF7B184DCF6200F7B7CB /* RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
+		4299DF7C184DCF6200F7B7CB /* RootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootView.xib; sourceTree = "<group>"; };
 		42FD2EA3184CC83B009D0B26 /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FD2EA6184CC83B009D0B26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42FD2EA8184CC83B009D0B26 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,8 +84,8 @@
 		42FD2EB0184CC83B009D0B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42FD2EB2184CC83B009D0B26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42FD2EB4184CC83B009D0B26 /* Assignment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment-Prefix.pch"; sourceTree = "<group>"; };
-		42FD2EB5184CC83B009D0B26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		42FD2EB6184CC83B009D0B26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42FD2EB5184CC83B009D0B26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Assignment/AppDelegate.h; sourceTree = "<group>"; };
+		42FD2EB6184CC83B009D0B26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Assignment/AppDelegate.m; sourceTree = "<group>"; };
 		42FD2EB8184CC83B009D0B26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		42FD2EBE184CC83B009D0B26 /* AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FD2EBF184CC83B009D0B26 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -114,12 +139,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4299DF6F184DCD0200F7B7CB /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				42FD2ED7184CC850009D0B26 /* ViewController.xib */,
+				4299DF7C184DCF6200F7B7CB /* RootView.xib */,
+				4299DF67184DCCCD00F7B7CB /* TimerView.xib */,
+				4299DF6C184DCCF000F7B7CB /* HelpView.xib */,
+				4299DF72184DCD4100F7B7CB /* AboutView.xib */,
+				4299DF77184DCD5F00F7B7CB /* HelpDetailView.xib */,
+			);
+			name = xibs;
+			sourceTree = "<group>";
+		};
 		42FD2E9A184CC83B009D0B26 = {
 			isa = PBXGroup;
 			children = (
+				42FD2EB5184CC83B009D0B26 /* AppDelegate.h */,
+				42FD2EB6184CC83B009D0B26 /* AppDelegate.m */,
 				42FD2ED5184CC850009D0B26 /* ViewController.h */,
 				42FD2ED6184CC850009D0B26 /* ViewController.m */,
-				42FD2ED7184CC850009D0B26 /* ViewController.xib */,
+				4299DF65184DCCCD00F7B7CB /* TimerView.h */,
+				4299DF66184DCCCD00F7B7CB /* TimerView.m */,
+				4299DF6A184DCCF000F7B7CB /* HelpView.h */,
+				4299DF6B184DCCF000F7B7CB /* HelpView.m */,
+				4299DF70184DCD4100F7B7CB /* AboutView.h */,
+				4299DF71184DCD4100F7B7CB /* AboutView.m */,
+				4299DF75184DCD5F00F7B7CB /* HelpDetailView.h */,
+				4299DF76184DCD5F00F7B7CB /* HelpDetailView.m */,
+				4299DF7A184DCF6200F7B7CB /* RootView.h */,
+				4299DF7B184DCF6200F7B7CB /* RootView.m */,
+				4299DF6F184DCD0200F7B7CB /* xibs */,
 				42FD2EDC184CC9E2009D0B26 /* Resource */,
 				42FD2EAC184CC83B009D0B26 /* Assignment */,
 				42FD2EC5184CC83B009D0B26 /* AssignmentTests */,
@@ -151,8 +201,6 @@
 		42FD2EAC184CC83B009D0B26 /* Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				42FD2EB5184CC83B009D0B26 /* AppDelegate.h */,
-				42FD2EB6184CC83B009D0B26 /* AppDelegate.m */,
 				42FD2EB8184CC83B009D0B26 /* Images.xcassets */,
 				42FD2EAD184CC83B009D0B26 /* Supporting Files */,
 			);
@@ -288,7 +336,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4299DF7E184DCF6200F7B7CB /* RootView.xib in Resources */,
 				42FD2EED184CC9F3009D0B26 /* 6.png in Resources */,
+				4299DF69184DCCCD00F7B7CB /* TimerView.xib in Resources */,
+				4299DF74184DCD4100F7B7CB /* AboutView.xib in Resources */,
 				42FD2EEB184CC9F3009D0B26 /* 4.png in Resources */,
 				42FD2EEC184CC9F3009D0B26 /* 5.png in Resources */,
 				42FD2EF6184CC9FD009D0B26 /* colone.png in Resources */,
@@ -304,6 +355,8 @@
 				42FD2EEF184CC9F3009D0B26 /* 8.png in Resources */,
 				42FD2EE8184CC9F3009D0B26 /* 1.png in Resources */,
 				42FD2ED9184CC850009D0B26 /* ViewController.xib in Resources */,
+				4299DF79184DCD5F00F7B7CB /* HelpDetailView.xib in Resources */,
+				4299DF6E184DCCF000F7B7CB /* HelpView.xib in Resources */,
 				42FD2EB9184CC83B009D0B26 /* Images.xcassets in Resources */,
 				42FD2EFD184CCAFB009D0B26 /* launch_tmp.png in Resources */,
 				42FD2EF5184CC9FD009D0B26 /* beep2.caf in Resources */,
@@ -326,8 +379,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4299DF6D184DCCF000F7B7CB /* HelpView.m in Sources */,
 				42FD2ED8184CC850009D0B26 /* ViewController.m in Sources */,
 				42FD2EB7184CC83B009D0B26 /* AppDelegate.m in Sources */,
+				4299DF68184DCCCD00F7B7CB /* TimerView.m in Sources */,
+				4299DF7D184DCF6200F7B7CB /* RootView.m in Sources */,
+				4299DF73184DCD4100F7B7CB /* AboutView.m in Sources */,
+				4299DF78184DCD5F00F7B7CB /* HelpDetailView.m in Sources */,
 				42FD2EB3184CC83B009D0B26 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +587,7 @@
 				42FD2ED1184CC83B009D0B26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42FD2ED2184CC83B009D0B26 /* Build configuration list for PBXNativeTarget "AssignmentTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +596,7 @@
 				42FD2ED4184CC83B009D0B26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

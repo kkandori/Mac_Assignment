@@ -1,19 +1,18 @@
 //
-//  ViewController.m
+//  TimerView.m
 //  Assignment
 //
-//  Created by DK on 12/2/13.
+//  Created by DK on 12/3/13.
 //  Copyright (c) 2013 DK. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TimerView.h"
 
-@interface ViewController ()
+@interface TimerView ()
 
 @end
 
-@implementation ViewController
-@synthesize navi;
+@implementation TimerView
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +25,6 @@
 
 - (void)viewDidLoad
 {
-    [self.view addSubview:navi.view];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
