@@ -10,4 +10,6 @@
 
 @interface HelpDetailView : UIViewController
 
+@property(nonatomic,retain) NSString *sName;
+@property(nonatomic,retain) IBOutlet UILabel *description;
 @end

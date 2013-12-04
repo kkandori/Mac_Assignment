@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HelpDetailView.h"
 
-@interface HelpView : UITableViewController
+@interface HelpView : UITableViewController //<UITableViewDataSource, UITableViewDelegate>
+{
+    NSArray *dataList;
+}
+
+@property(nonatomic,retain) HelpDetailView *detailView;
 
 @end

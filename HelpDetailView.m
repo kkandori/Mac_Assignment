@@ -13,6 +13,7 @@
 @end
 
 @implementation HelpDetailView
+@synthesize sName,description;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +28,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void) viewWillAppear:(BOOL)animated
+{
+    if(sName != NULL)
+    {
+        description.text = sName;
+        NSLog(@"sName : %@, description : %@", sName, description.text);
+    }
+    [super viewWillAppear:YES];
 }
 
 - (void)didReceiveMemoryWarning
