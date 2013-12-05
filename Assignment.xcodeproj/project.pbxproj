@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4296A500184F18A0004AE517 /* DripText.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4296A4FF184F18A0004AE517 /* DripText.plist */; };
+		42984475185062CA00BC1EA3 /* Barista_About.png in Resources */ = {isa = PBXBuildFile; fileRef = 42984471185062CA00BC1EA3 /* Barista_About.png */; };
+		42984476185062CA00BC1EA3 /* Barista_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 42984472185062CA00BC1EA3 /* Barista_Icon.png */; };
+		42984477185062CA00BC1EA3 /* Barista_Launching.png in Resources */ = {isa = PBXBuildFile; fileRef = 42984473185062CA00BC1EA3 /* Barista_Launching.png */; };
+		42984478185062CA00BC1EA3 /* Barista_Main.png in Resources */ = {isa = PBXBuildFile; fileRef = 42984474185062CA00BC1EA3 /* Barista_Main.png */; };
+		4298447C18506F0000BC1EA3 /* a2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4298447B18506F0000BC1EA3 /* a2.png */; };
 		4299DF68184DCCCD00F7B7CB /* TimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4299DF66184DCCCD00F7B7CB /* TimerView.m */; };
 		4299DF69184DCCCD00F7B7CB /* TimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4299DF67184DCCCD00F7B7CB /* TimerView.xib */; };
 		4299DF6D184DCCF000F7B7CB /* HelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4299DF6B184DCCF000F7B7CB /* HelpView.m */; };
@@ -46,9 +51,6 @@
 		42FD2EF4184CC9FD009D0B26 /* beep1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 42FD2EF1184CC9FD009D0B26 /* beep1.caf */; };
 		42FD2EF5184CC9FD009D0B26 /* beep2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 42FD2EF2184CC9FD009D0B26 /* beep2.caf */; };
 		42FD2EF6184CC9FD009D0B26 /* colone.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FD2EF3184CC9FD009D0B26 /* colone.png */; };
-		42FD2EFB184CCAFB009D0B26 /* inside_tmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FD2EF8184CCAFB009D0B26 /* inside_tmp.png */; };
-		42FD2EFC184CCAFB009D0B26 /* icon_tmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FD2EF9184CCAFB009D0B26 /* icon_tmp.png */; };
-		42FD2EFD184CCAFB009D0B26 /* launch_tmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FD2EFA184CCAFB009D0B26 /* launch_tmp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,11 @@
 
 /* Begin PBXFileReference section */
 		4296A4FF184F18A0004AE517 /* DripText.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DripText.plist; sourceTree = "<group>"; };
+		42984471185062CA00BC1EA3 /* Barista_About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barista_About.png; sourceTree = "<group>"; };
+		42984472185062CA00BC1EA3 /* Barista_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barista_Icon.png; sourceTree = "<group>"; };
+		42984473185062CA00BC1EA3 /* Barista_Launching.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barista_Launching.png; sourceTree = "<group>"; };
+		42984474185062CA00BC1EA3 /* Barista_Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barista_Main.png; sourceTree = "<group>"; };
+		4298447B18506F0000BC1EA3 /* a2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a2.png; sourceTree = "<group>"; };
 		4299DF65184DCCCD00F7B7CB /* TimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerView.h; sourceTree = "<group>"; };
 		4299DF66184DCCCD00F7B7CB /* TimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerView.m; sourceTree = "<group>"; };
 		4299DF67184DCCCD00F7B7CB /* TimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerView.xib; sourceTree = "<group>"; };
@@ -112,9 +119,6 @@
 		42FD2EF2184CC9FD009D0B26 /* beep2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beep2.caf; sourceTree = "<group>"; };
 		42FD2EF3184CC9FD009D0B26 /* colone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colone.png; sourceTree = "<group>"; };
 		42FD2EF7184CCA05009D0B26 /* endcoffee.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = endcoffee.caf; sourceTree = "<group>"; };
-		42FD2EF8184CCAFB009D0B26 /* inside_tmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inside_tmp.png; sourceTree = "<group>"; };
-		42FD2EF9184CCAFB009D0B26 /* icon_tmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_tmp.png; sourceTree = "<group>"; };
-		42FD2EFA184CCAFB009D0B26 /* launch_tmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_tmp.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,8 @@
 				42FD2EB6184CC83B009D0B26 /* AppDelegate.m */,
 				42FD2ED5184CC850009D0B26 /* ViewController.h */,
 				42FD2ED6184CC850009D0B26 /* ViewController.m */,
+				4299DF7A184DCF6200F7B7CB /* RootView.h */,
+				4299DF7B184DCF6200F7B7CB /* RootView.m */,
 				4299DF65184DCCCD00F7B7CB /* TimerView.h */,
 				4299DF66184DCCCD00F7B7CB /* TimerView.m */,
 				4299DF6A184DCCF000F7B7CB /* HelpView.h */,
@@ -169,8 +175,6 @@
 				4299DF71184DCD4100F7B7CB /* AboutView.m */,
 				4299DF75184DCD5F00F7B7CB /* HelpDetailView.h */,
 				4299DF76184DCD5F00F7B7CB /* HelpDetailView.m */,
-				4299DF7A184DCF6200F7B7CB /* RootView.h */,
-				4299DF7B184DCF6200F7B7CB /* RootView.m */,
 				4299DF6F184DCD0200F7B7CB /* xibs */,
 				42FD2EDC184CC9E2009D0B26 /* Resource */,
 				42FD2EAC184CC83B009D0B26 /* Assignment */,
@@ -241,10 +245,12 @@
 		42FD2EDC184CC9E2009D0B26 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4298447B18506F0000BC1EA3 /* a2.png */,
+				42984471185062CA00BC1EA3 /* Barista_About.png */,
+				42984472185062CA00BC1EA3 /* Barista_Icon.png */,
+				42984473185062CA00BC1EA3 /* Barista_Launching.png */,
+				42984474185062CA00BC1EA3 /* Barista_Main.png */,
 				4296A4FF184F18A0004AE517 /* DripText.plist */,
-				42FD2EF8184CCAFB009D0B26 /* inside_tmp.png */,
-				42FD2EF9184CCAFB009D0B26 /* icon_tmp.png */,
-				42FD2EFA184CCAFB009D0B26 /* launch_tmp.png */,
 				42FD2EDD184CC9F3009D0B26 /* 0.png */,
 				42FD2EDE184CC9F3009D0B26 /* 1.png */,
 				42FD2EDF184CC9F3009D0B26 /* 2.png */,
@@ -345,26 +351,28 @@
 				4299DF74184DCD4100F7B7CB /* AboutView.xib in Resources */,
 				42FD2EEB184CC9F3009D0B26 /* 4.png in Resources */,
 				42FD2EEC184CC9F3009D0B26 /* 5.png in Resources */,
+				42984478185062CA00BC1EA3 /* Barista_Main.png in Resources */,
+				42984476185062CA00BC1EA3 /* Barista_Icon.png in Resources */,
 				42FD2EF6184CC9FD009D0B26 /* colone.png in Resources */,
 				42FD2EEE184CC9F3009D0B26 /* 7.png in Resources */,
 				42FD2EB1184CC83B009D0B26 /* InfoPlist.strings in Resources */,
 				42FD2EE7184CC9F3009D0B26 /* 0.png in Resources */,
 				42FD2EE9184CC9F3009D0B26 /* 2.png in Resources */,
 				42FD2EEA184CC9F3009D0B26 /* 3.png in Resources */,
+				42984475185062CA00BC1EA3 /* Barista_About.png in Resources */,
 				42FD2EDB184CC9D6009D0B26 /* handdrip.png in Resources */,
-				42FD2EFC184CCAFB009D0B26 /* icon_tmp.png in Resources */,
 				42FD2EF4184CC9FD009D0B26 /* beep1.caf in Resources */,
 				42FD2EF0184CC9F3009D0B26 /* 9.png in Resources */,
 				42FD2EEF184CC9F3009D0B26 /* 8.png in Resources */,
+				42984477185062CA00BC1EA3 /* Barista_Launching.png in Resources */,
 				42FD2EE8184CC9F3009D0B26 /* 1.png in Resources */,
 				42FD2ED9184CC850009D0B26 /* ViewController.xib in Resources */,
 				4299DF79184DCD5F00F7B7CB /* HelpDetailView.xib in Resources */,
 				4299DF6E184DCCF000F7B7CB /* HelpView.xib in Resources */,
+				4298447C18506F0000BC1EA3 /* a2.png in Resources */,
 				42FD2EB9184CC83B009D0B26 /* Images.xcassets in Resources */,
-				42FD2EFD184CCAFB009D0B26 /* launch_tmp.png in Resources */,
 				4296A500184F18A0004AE517 /* DripText.plist in Resources */,
 				42FD2EF5184CC9FD009D0B26 /* beep2.caf in Resources */,
-				42FD2EFB184CCAFB009D0B26 /* inside_tmp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

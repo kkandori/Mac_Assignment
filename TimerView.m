@@ -43,11 +43,14 @@
     }
     
     imgDrip = [[UIImage alloc] initWithContentsOfFile:imgDripPath];
-    imgViewDrip.image = imgDrip;
+    //imgViewDrip.image = imgDrip;
     
     imgCol = [[UIImage alloc] initWithContentsOfFile:imgColPath];
     imgViewCol.image = imgCol;
-    
+
+    //NSString *tmpPath = [[NSBundle mainBundle]pathForResource:@"a2" ofType:@"png"];
+    //imgNumber[0] = [[UIImage alloc] initWithContentsOfFile:tmpPath];
+
     imgViewMin.image = imgNumber[0];
     imgViewSec01.image = imgNumber[0];
     imgViewSec02.image = imgNumber[0];

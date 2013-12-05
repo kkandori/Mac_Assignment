@@ -12,6 +12,12 @@
 #import "AboutView.h"
 
 @interface RootView : UIViewController
+{
+ //   UIImageView *imgViewBG;
+ //   UIImage *imgBG;
+}
+
+//@property(nonatomic,retain) IBOutlet UIImageView *imgViewBG;
 
 @property(nonatomic,retain) TimerView *timerView;
 @property(nonatomic,retain) HelpView *helpView;

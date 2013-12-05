@@ -14,6 +14,7 @@
 
 @implementation RootView
 @synthesize timerView, helpView, aboutView;
+//@synthesize imgViewBG;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +27,12 @@
 
 - (void)viewDidLoad
 {
+    //NSString *imgBGPath = [[NSBundle mainBundle]pathForResource:@"barista_main2" ofType:@"png"];
+    //NSString *imgBGPath = [[NSBundle mainBundle]pathForResource:@"barista_main1_2" ofType:@"png"];
+    
+    //imgBG = [[UIImage alloc] initWithContentsOfFile:imgBGPath];
+    //imgViewBG.image = imgBG;
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
