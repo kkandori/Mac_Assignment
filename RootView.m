@@ -14,25 +14,17 @@
 
 @implementation RootView
 @synthesize timerView, helpView, aboutView;
-//@synthesize imgViewBG;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
-    //NSString *imgBGPath = [[NSBundle mainBundle]pathForResource:@"barista_main2" ofType:@"png"];
-    //NSString *imgBGPath = [[NSBundle mainBundle]pathForResource:@"barista_main1_2" ofType:@"png"];
-    
-    //imgBG = [[UIImage alloc] initWithContentsOfFile:imgBGPath];
-    //imgViewBG.image = imgBG;
-    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -43,6 +35,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Move to Timer View
 -(IBAction)moveToTimerView:(id)sender
 {
     if(timerView==nil)
@@ -50,11 +43,13 @@
         timerView = [[TimerView alloc]initWithNibName:@"TimerView" bundle:nil];
     }
     
-    timerView.title = @"Coffee Timer";
+    timerView.title = @"커피 타이머";
     
     [self.navigationController pushViewController:timerView animated:YES];
 
 }
+
+// Move to Help View
 -(IBAction)moveToHelpView:(id)sender
 {
     if(helpView==nil)
@@ -62,10 +57,12 @@
         helpView = [[HelpView alloc]initWithNibName:@"HelpView" bundle:nil];
     }
     
-    helpView.title = @"Help";
+    helpView.title = @"길라잡이";
     
     [self.navigationController pushViewController:helpView animated:YES];
 }
+
+// Move to About View
 -(IBAction)moveToAboutView:(id)sender
 {
     if(aboutView==nil)
@@ -73,7 +70,7 @@
         aboutView = [[AboutView alloc]initWithNibName:@"AboutView" bundle:nil];
     }
     
-    aboutView.title = @"About";
+    aboutView.title = @"이것은...";
     
     [self.navigationController pushViewController:aboutView animated:YES];
 }

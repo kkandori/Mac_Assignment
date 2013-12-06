@@ -30,7 +30,7 @@
             </navigationBar>
             <viewControllers>
                 <viewController id="rbI-tA-etk" customClass="RootView">
-                    <navigationItem key="navigationItem" title="Main" id="zw5-NN-vna"/>
+                    <navigationItem key="navigationItem" title="대문" id="zw5-NN-vna"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>

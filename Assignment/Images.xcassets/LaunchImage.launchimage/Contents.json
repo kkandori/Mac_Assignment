@@ -5,7 +5,6 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "launch_tmp-2.png",
       "scale" : "2x"
     },
     {
@@ -20,14 +19,14 @@
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
-      "filename" : "launch_tmp.png",
+      "filename" : "Barista_Launching.png",
       "scale" : "1x"
     },
     {
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
-      "filename" : "launch_tmp-1.png",
+      "filename" : "Barista_Launching-1.png",
       "scale" : "2x"
     },
     {

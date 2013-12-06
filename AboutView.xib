@@ -18,10 +18,20 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.79999999999999982" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" editable="NO" text="About Hand-drip Coffee Timer  2013blablablablabl  David Kim" translatesAutoresizingMaskIntoConstraints="NO" id="wWQ-9y-icB">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.79999999999999982" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wWQ-9y-icB">
                     <rect key="frame" x="40" y="125" width="240" height="195"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <string key="text">커피 타이머는 ?
+
+핸드 드립 커피를 맛있게 먹기 위해서 각 단계별 타이머와 설명을 넣은 앱입니다. 
+
+맛있는 커피 내려 드세요. 
+
+서울디지털대학교
+컴퓨터소프트웨어학과
+2013620170
+김영현</string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>

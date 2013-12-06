@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "HelpDetailView.h"
 
-@interface HelpView : UITableViewController //<UITableViewDataSource, UITableViewDelegate>
+@interface HelpView : UITableViewController
 {
     NSArray *dataList;
 }
