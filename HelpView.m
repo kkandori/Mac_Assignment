@@ -26,7 +26,6 @@
 
 - (void)viewDidLoad
 {
-    self->dataList = [[NSArray alloc]initWithObjects:@"test1", @"test2", @"test3", nil];
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -34,6 +33,16 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self->dataList = [[NSArray alloc]initWithObjects:@"test1", @"test2", @"test3", nil];
+    
+    NSString *descPath = [[NSBundle mainBundle]pathForResource:@"HelpDetailInfo" ofType:@"plist"];
+    steps = [[NSDictionary alloc]initWithContentsOfFile:descPath];
+    
+    NSArray *tmp = [[steps allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    keys = [[NSArray alloc]initWithArray:tmp];
+    //msgView.text = [steps objectForKey:[keys objectAtIndex:eReset]];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,7 +62,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [dataList count];
+    //return [dataList count];
+    return [keys count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,10 +75,8 @@
     }
     
     // Configure the cell...
-    //NSDictionary *row = [dataList objectAtIndex: [indexPath row]];
-    cell.textLabel.text = [dataList objectAtIndex:[indexPath row]];
-    //[dataList objectForKey:row];
-    
+    //cell.textLabel.text = [dataList objectAtIndex:[indexPath row]];
+    cell.textLabel.text = [keys objectAtIndex:[indexPath row]];
     return cell;
 }
 
@@ -117,16 +125,18 @@
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     //NSDictionary *row = [dataList objectAtIndex:[indexPath row]];
 	if (detailView == nil) {
 		detailView = [[HelpDetailView alloc]
 					  initWithNibName:@"HelpDetailView" bundle:nil];
 	}
-	detailView.title = [dataList objectAtIndex:[indexPath row]];
-	//detailView.sMode = @"편집";
-	detailView.sName = [dataList objectAtIndex:[indexPath row]];
-	
+	//detailView.title = [dataList objectAtIndex:[indexPath row]];
+    detailView.title = [keys objectAtIndex:[indexPath row]];
+	//detailView.sName = [dataList objectAtIndex:[indexPath row]];
+	detailView.sName = [steps objectForKey:[keys objectAtIndex:[indexPath row]]];
+    //detailView.description.text = [steps objectForKey:[keys objectAtIndex:[indexPath row]]];
+    //NSLog(@"%@", [steps objectForKey:[keys objectAtIndex:[indexPath row]]]);
+    NSLog(@"%@", detailView.sName);
 	[self.navigationController pushViewController:detailView animated:YES];
 }
  

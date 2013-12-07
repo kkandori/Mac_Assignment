@@ -80,9 +80,9 @@
 
 -(void)triggerTimer
 {
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(targetMethod:) userInfo:nil repeats:YES];
-    [startBtn setTitle:@"멈춤" forState:UIControlStateNormal];
-    msg.text = @"잠깐 멈추고 싶으시면 멈춤을 눌러주세요.";
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(targetMethod:) userInfo:nil repeats:YES];
+    [startBtn setTitle:@"일시중지" forState:UIControlStateNormal];
+    msg.text = @"잠깐 멈추고 싶으시면 일시중지를 눌러주세요.";
 }
 
 -(void)pauseTimer
@@ -96,7 +96,7 @@
 {
     [timer invalidate];
     [startBtn setTitle:@"시작" forState:UIControlStateNormal];
-    tickTime = 0;
+    
     msg.text = @"시작을 누르면 타이머가 작동합니다.";
 }
 
@@ -127,8 +127,6 @@
     }
     
     msgView.text = [steps objectForKey:[keys objectAtIndex:status]];
-    //NSLog(@"%@", msgView.text);
-    //NSLog(@"Start Button Pressed");
 }
 
 -(IBAction)btnResetPress:(id)sender
@@ -136,9 +134,8 @@
     [self resetTimer];
     [self setTimerImage:0 sec:0];
     status = eReset;
-    
+    //tickTime = 0;
     msgView.text = [steps objectForKey:[keys objectAtIndex:status]];
-    //NSLog(@"Reset Button Pressed");
 }
 
 -(void)targetMethod:(NSTimer *)timer
@@ -146,9 +143,32 @@
     tickTime++;
     [self setTimerImage:tickTime/60 sec:tickTime%60];
  
-    switch(tickTime)
+    switch(tickTime%30)
     {
         case 27:
+        case 28:
+        case 29:
+            if(status!=eStep4 || tickTime>=120 )
+            {
+                AudioServicesPlaySystemSound(m_beef1);
+            }
+            break;
+        case 0:
+            if(status>=eStep1 && status<=eStep3)
+            {
+                AudioServicesPlaySystemSound(m_beef2);
+                status++;
+                [self resetTimer];
+            }
+            else if(status==eStep4 && tickTime==150)
+            {
+                AudioServicesPlaySystemSound(m_beefEnd);
+                status=eReset;
+                tickTime = 0;
+                [self resetTimer];
+            }
+            break;
+ /*       case 27:
         case 28:
         case 29:
             if(status!=eStep4)
@@ -182,9 +202,11 @@
             {
                 AudioServicesPlaySystemSound(m_beefEnd);
                 status=eReset;
+                tickTime = 0;
                 [self resetTimer];
             }
             break;
+*/
     }
     //NSLog(@"%i", tickTime);
 }

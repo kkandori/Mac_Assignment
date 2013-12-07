@@ -12,8 +12,14 @@
 @interface HelpView : UITableViewController
 {
     NSArray *dataList;
+    
+    NSDictionary *steps;
+    NSArray *keys;
 }
 
 @property(nonatomic,retain) HelpDetailView *detailView;
+
+@property (nonatomic,retain) NSDictionary *steps;
+@property (nonatomic,retain) NSArray *keys;
 
 @end

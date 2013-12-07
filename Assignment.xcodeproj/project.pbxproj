@@ -11,6 +11,7 @@
 		423E0C241851C4B9001AABC9 /* beep2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 429557D91851BC54005CEEE3 /* beep2.caf */; };
 		423E0C251851C4B9001AABC9 /* endcoffee.caf in Resources */ = {isa = PBXBuildFile; fileRef = 429557DA1851BC54005CEEE3 /* endcoffee.caf */; };
 		429557D61851B22A005CEEE3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429557D51851B22A005CEEE3 /* AudioToolbox.framework */; };
+		4296635B1852F92400DC6DBC /* HelpDetailInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4296635A1852F92400DC6DBC /* HelpDetailInfo.plist */; };
 		4296A500184F18A0004AE517 /* DripText.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4296A4FF184F18A0004AE517 /* DripText.plist */; };
 		42984475185062CA00BC1EA3 /* Barista_About.png in Resources */ = {isa = PBXBuildFile; fileRef = 42984471185062CA00BC1EA3 /* Barista_About.png */; };
 		42984476185062CA00BC1EA3 /* Barista_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 42984472185062CA00BC1EA3 /* Barista_Icon.png */; };
@@ -69,6 +70,7 @@
 		429557D81851BC54005CEEE3 /* beep1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beep1.caf; sourceTree = "<group>"; };
 		429557D91851BC54005CEEE3 /* beep2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beep2.caf; sourceTree = "<group>"; };
 		429557DA1851BC54005CEEE3 /* endcoffee.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = endcoffee.caf; sourceTree = "<group>"; };
+		4296635A1852F92400DC6DBC /* HelpDetailInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HelpDetailInfo.plist; sourceTree = "<group>"; };
 		4296A4FF184F18A0004AE517 /* DripText.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DripText.plist; sourceTree = "<group>"; };
 		42984471185062CA00BC1EA3 /* Barista_About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barista_About.png; sourceTree = "<group>"; };
 		42984472185062CA00BC1EA3 /* Barista_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barista_Icon.png; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				42984473185062CA00BC1EA3 /* Barista_Launching.png */,
 				42984474185062CA00BC1EA3 /* Barista_Main.png */,
 				4296A4FF184F18A0004AE517 /* DripText.plist */,
+				4296635A1852F92400DC6DBC /* HelpDetailInfo.plist */,
 				42FD2EDD184CC9F3009D0B26 /* 0.png */,
 				42FD2EDE184CC9F3009D0B26 /* 1.png */,
 				42FD2EDF184CC9F3009D0B26 /* 2.png */,
@@ -361,6 +364,7 @@
 				42FD2EF6184CC9FD009D0B26 /* colone.png in Resources */,
 				42FD2EEE184CC9F3009D0B26 /* 7.png in Resources */,
 				42FD2EB1184CC83B009D0B26 /* InfoPlist.strings in Resources */,
+				4296635B1852F92400DC6DBC /* HelpDetailInfo.plist in Resources */,
 				42FD2EE7184CC9F3009D0B26 /* 0.png in Resources */,
 				42FD2EE9184CC9F3009D0B26 /* 2.png in Resources */,
 				42FD2EEA184CC9F3009D0B26 /* 3.png in Resources */,

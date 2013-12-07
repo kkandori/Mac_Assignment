@@ -57,7 +57,7 @@
         helpView = [[HelpView alloc]initWithNibName:@"HelpView" bundle:nil];
     }
     
-    helpView.title = @"길라잡이";
+    helpView.title = @"커피 정보";
     
     [self.navigationController pushViewController:helpView animated:YES];
 }
