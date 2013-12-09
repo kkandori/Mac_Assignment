@@ -8,25 +8,26 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelpDetailView : UIViewController <UIWebViewDelegate,UITextFieldDelegate>
+@interface HelpDetailView : UIViewController <UIWebViewDelegate,UITextFieldDelegate, UIScrollViewDelegate>
 {
     NSString *sName;
+    NSTimer *timer;
+    BOOL    flag;
     //UIWebView *webView;
 }
 @property(nonatomic,retain) NSString *sName;
 
-//@property(nonatomic,retain) IBOutlet UILabel *description;
 @property(nonatomic,retain) IBOutlet UIWebView *webView;
 
 @property(nonatomic,retain) IBOutlet UIButton *backBtn;
 @property(nonatomic,retain) IBOutlet UIButton *forwardBtn;
 @property(nonatomic,retain) IBOutlet UIButton *goBtn;
+@property(nonatomic,retain) IBOutlet UIButton *dummyBtn;
 @property(nonatomic,retain) IBOutlet UITextField *addrTxt;
 
 -(IBAction)pressBack:(id)sender;
 -(IBAction)pressForward:(id)sender;
 -(IBAction)goURL:(id)sender;
 -(IBAction)keyResign:(id)sender;
-
 
 @end

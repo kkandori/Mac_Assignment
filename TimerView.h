@@ -30,7 +30,6 @@
     }currentStatus;
 }
 
-@property (nonatomic,retain) IBOutlet UIImageView *imgViewDrip;
 @property (nonatomic,retain) IBOutlet UIImageView *imgViewMin;
 @property (nonatomic,retain) IBOutlet UIImageView *imgViewCol;
 @property (nonatomic,retain) IBOutlet UIImageView *imgViewSec01;

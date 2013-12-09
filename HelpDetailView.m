@@ -15,8 +15,7 @@
 @implementation HelpDetailView
 @synthesize webView,sName;
 
-//@synthesize  description;
-@synthesize backBtn,forwardBtn, goBtn, addrTxt;
+@synthesize backBtn,forwardBtn, goBtn, dummyBtn, addrTxt;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,62 +30,53 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    flag = NO;
 }
 
 -(void) viewWillAppear:(BOOL)animated
 {
-    //NSLog(@"%@ , %@", description.text, addrTxt.text);
-    
     [super viewWillAppear:YES];
     addrTxt.delegate = self;
     webView.delegate = self;
+    webView.scrollView.delegate = self;
 
     addrTxt.text = sName;
+
     [self goURL:self];
-    
-    /*NSURLRequest *request;
-    request = [NSURLRequest requestWithURL:[NSURL URLWithString:sName]];
-    addrTxt.text = sName;
-    
-    webView.delegate = self;
-    [webView loadRequest:request];*/
-    NSLog(@"%f",[webView pageLength]);
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [addrTxt resignFirstResponder];
-    
-    NSLog(@"event");
     [self goURL:self];
-    
+   
     return YES;
 }
 
 -(IBAction)goURL:(id)sender
 {
     [addrTxt resignFirstResponder];
-    
-    //[addrTxt.text initWithFormat:@"http://%@" arguments:addrTxt.text];
-    
-    NSLog(@"event");
+
     NSURLRequest *request;
     request = [NSURLRequest requestWithURL:[NSURL URLWithString:addrTxt.text]];
-    //addrTxt.text = description.text;
-    NSLog(@"%@",  addrTxt.text);
     
     [webView loadRequest:request];
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-    [webView setHidden:YES];
+    [self.webView setHidden:YES];
     [addrTxt resignFirstResponder];
-     
 }
+
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    [webView setHidden:NO];
+    [self.webView setHidden:NO];
+    
+    [backBtn setEnabled:[self.webView canGoBack]];
+    [forwardBtn setEnabled:[self.webView canGoForward]];
+    
+    addrTxt.text = sName = self.webView.request.URL.absoluteString;
 }
 
 -(IBAction)pressBack:(id)sender
@@ -102,6 +92,31 @@
 -(IBAction)keyResign:(id)sender
 {
     [addrTxt resignFirstResponder];
+}
+
+- (void)scrollViewWillBeginDragging:(UIWebView *)webView
+{
+    [addrTxt resignFirstResponder];
+    
+    [timer invalidate];
+    flag = YES;
+    [self showAndHide:timer];
+}
+
+- (void)scrollViewDidEndDragging:(UIWebView *)webView willDecelerate:(BOOL)decelerate
+{
+    [timer invalidate];
+    flag = NO;
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(showAndHide:) userInfo:nil repeats:NO];
+}
+
+-(void)showAndHide:(NSTimer *)timer
+{
+    [dummyBtn setHidden:flag];
+    [backBtn setHidden:flag];
+    [forwardBtn setHidden:flag];
+    [goBtn setHidden:flag];
+    [addrTxt setHidden:flag];
 }
 
 - (void)didReceiveMemoryWarning

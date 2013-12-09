@@ -130,13 +130,8 @@
 		detailView = [[HelpDetailView alloc]
 					  initWithNibName:@"HelpDetailView" bundle:nil];
 	}
-	//detailView.title = [dataList objectAtIndex:[indexPath row]];
     detailView.title = [keys objectAtIndex:[indexPath row]];
-	//detailView.sName = [dataList objectAtIndex:[indexPath row]];
 	detailView.sName = [steps objectForKey:[keys objectAtIndex:[indexPath row]]];
-    //detailView.description.text = [steps objectForKey:[keys objectAtIndex:[indexPath row]]];
-    //NSLog(@"%@", [steps objectForKey:[keys objectAtIndex:[indexPath row]]]);
-    NSLog(@"%@", detailView.sName);
 	[self.navigationController pushViewController:detailView animated:YES];
 }
  
