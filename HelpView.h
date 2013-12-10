@@ -11,7 +11,7 @@
 
 @interface HelpView : UITableViewController
 {
-    NSArray *dataList;
+    //NSArray *dataList;
     
     NSDictionary *steps;
     NSArray *keys;

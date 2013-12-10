@@ -73,7 +73,7 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:NO];
+    [super viewWillAppear:YES];
     [self btnResetPress:self];
 }
 
