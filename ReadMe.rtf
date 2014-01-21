@@ -1,0 +1,240 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red170\green13\blue145;\red63\green110\blue116;\red46\green13\blue110;
+\red196\green26\blue22;\red92\green38\blue153;\red28\green0\blue207;\red38\green71\blue75;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15940\viewh13080\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 Github : https://github.com/kkandori/Mac_Assignment/\
+\
+1. \'b1\'e2\'ba\'bb \'bb\'e7\'c0\'cc\'c1\'ee : 3.5\'c0\'ce\'c4\'a1 Retina \'c8\'ad\'b8\'e9\'bf\'a1 \'b8\'c2\'b0\'d4 \'c1\'a6\'c0\'db\
+\
+2. \'b1\'b8\'bc\'ba
+\f1 \
+
+\b \
+2-1. AppDelegate
+\b0 \
+- ViewController 
+\f0 \'b8\'a6 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'c8\'ad\'c7\'cf\'bf\'a9 \'b8\'de\'c0\'ce 
+\f1 controller
+\f0 \'b7\'ce \'c7\'d2\'b4\'e7
+\f1 \
+\pard\tx529\pardeftab529\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0     \cf2 self\cf0 .\cf3 viewController\cf0  = [[\cf3 ViewController\cf0  \cf4 alloc\cf0 ]\cf4 initWithNibName\cf0 :\cf5 @"ViewController"\cf0  \cf4 bundle\cf0 :\cf2 nil\cf0 ];\
+    \cf2 self\cf0 .\cf3 window\cf0 .\cf6 rootViewController\cf0  = \cf2 self\cf0 .\cf3 viewController\cf0  ;
+\f1\fs24 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+
+\b 2-2. ViewController
+\b0 \
+- UINavigationController
+\f0 \'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'bf\'a9 \'b1\'e2\'ba\'bb\'c0\'fb\'c0\'ce Navigation Controller \'b8\'a6 \'bb\'fd\'bc\'ba\
+
+\f1 \
+
+\b 2-3. RootView
+\b0 \
+- 
+\f0 \'b0\'a2 \'c8\'ad\'b8\'e9 
+\f1 (Timer, Help, About ) 
+\f0 \'c0\'b8\'b7\'ce \'b0\'a1\'b1\'e2 \'c0\'a7\'c7\'d1 
+\f1 View 
+\f0 \'bb\'fd\'bc\'ba
+\f1 \
+- 
+\f0 \'b9\'f6\'c6\'b0\'c0\'bb \'c5\'eb\'c7\'d1 
+\f1 Navigation 
+\f0 \'c8\'ad\'b8\'e9 \'c0\'cc\'b5\'bf
+\f1 \
+\
+
+\b 2-4. TimerView
+\b0 \
+- 
+\f0 \'c5\'b8\'c0\'cc\'b8\'d3\'b1\'b8\'bc\'ba,
+\f1  property list 
+\f0 \'c8\'b0\'bf\'eb,
+\f1  
+\f0 \'bf\'c0\'b5\'f0\'bf\'c0 \'c6\'c4\'c0\'cf \'c8\'b0\'bf\'eb,
+\f1  
+\f0 \'c0\'cc\'b9\'cc\'c1\'f6 \'c6\'c4\'c0\'cf \'c8\'b0\'bf\'eb\
+
+\f1 - 30, 30, 30, 60 
+\f0 \'c3\'ca\'c0\'c7 \'b1\'b8\'bc\'ba\'bf\'a1 \'b8\'c2\'b0\'d4 \'b0\'a2 \'b4\'dc\'b0\'e8 \'b8\'b6\'c1\'f6\'b8\'b7 
+\f1 3
+\f0 \'c3\'ca\'c0\'fc\'bf\'a1 
+\f1 beep 
+\f0 \'c0\'e7\'bb\'fd.
+\f1  \
+- 
+\f0 \'b8\'b6\'c1\'f6\'b8\'b7 \'b4\'dc\'b0\'e8\'bf\'a1\'bc\'ad\'b4\'c2 \'b4\'d9\'b8\'a5 \'bf\'c0\'b5\'f0\'bf\'c0 \'c0\'e7\'bb\'fd.
+\f1 \
+- 
+\f0 \'b0\'a2 \'b4\'dc\'b0\'e8\'b8\'a6 
+\f1 enum 
+\f0 \'b0\'aa\'c0\'b8\'b7\'ce \'b1\'b8\'ba\'d0\'c7\'cf\'bf\'a9 \'bb\'f3\'c5\'c2 \'ba\'af\'c8\'ad
+\f1 \
+\pard\tx529\pardeftab529\pardirnatural
+
+\f2\fs22 \cf2 \CocoaLigature0 enum\cf0  \{\
+        eReset = \cf7 0\cf0 ,\
+        eStep1, eStep2, eStep3, eStep4\
+    \}currentStatus;
+\f1\fs24 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+
+\f0 - \'bd\'c3\'c0\'db\'c0\'bb \'b4\'a9\'b8\'a3\'b0\'c5\'b3\'aa, \'c1\'df\'c1\'f6\'c0\'cc\'c8\'c4 \'b4\'d9\'bd\'c3 \'bd\'c3\'c0\'db\'c0\'bb \'b4\'a9\'b8\'a6\'b6\'a7 \'c5\'b8\'c0\'cc\'b8\'d3 \'b0\'a1\'b5\'bf\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f2\fs22 \cf3 \CocoaLigature0  timer\cf0  = [\cf6 NSTimer\cf0  \cf4 scheduledTimerWithTimeInterval\cf0 :\cf7 1.0\cf0  \cf4 target\cf0 :\cf2 self\cf0  \cf4 selector\cf0 :\cf2 @selector\cf0 (targetMethod:) \cf4 userInfo\cf0 :\cf2 nil\cf0  \cf4 repeats\cf0 :\cf2 YES\cf0 ];\
+\
+- 
+\f0 \'c8\'ad\'b8\'e9\'c0\'cc \'b7\'bb\'b4\'f5\'b5\'c9\'b6\'a7\'bf\'a1 \'b8\'f0\'b5\'e7 \'b0\'aa (\'c5\'b8\'c0\'cc\'b8\'d3, \'bd\'c3\'b0\'a3, \'bb\'f3\'c5\'c2 ) \'b8\'ae\'bc\'c2 : \'c1\'ef, \'c8\'ad\'b8\'e9 \'c0\'cc\'b5\'bf\'c0\'cc\'c8\'c4\'bf\'a1\'b4\'c2 \'b8\'f0\'b5\'e7 \'bb\'f3\'c5\'c2\'b0\'a1 \'b8\'ae\'bc\'c2\'b5\'ca.\
+\
+
+\f2 -(\cf2 void\cf0 )viewWillAppear:(\cf2 BOOL\cf0 )animated\
+\{\
+    [\cf2 super\cf0  \cf4 viewWillAppear\cf0 :\cf2 YES\cf0 ];\
+    [\cf2 self\cf0  \cf8 btnResetPress\cf0 :\cf2 self\cf0 ];	// 
+\f0 \'b8\'ae\'bc\'c2\'b9\'f6\'c6\'b0 \'c0\'cc\'ba\'a5\'c6\'ae \'b0\'ad\'c1\'a6 \'b9\'df\'bb\'fd
+\f2 \
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+
+\b 2-5. HelpView
+\b0 \
+- 
+\f0 \'c4\'bf\'c7\'c7\'bf\'a1 \'b4\'eb\'c7\'d1 \'c1\'a4\'ba\'b8 ( \'c5\'b8\'c0\'cc\'c6\'b2, \'c0\'a5\'bb\'e7\'c0\'cc\'c6\'ae\'c1\'d6\'bc\'d2 ) \'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'c0\'d6\'b4\'c2  property list (HelpDetailInfo.plist) \'b8\'a6 \'b7\'ce\'b5\'e5\'c7\'cf\'bf\'a9 \'c5\'d7\'c0\'cc\'ba\'ed \'ba\'e4\'b7\'ce \'c7\'a5\'c7\'f6\
+- \'bc\'bf\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'df\'c0\'bb \'b6\'a7\'bf\'a1 \'c1\'d6\'bc\'d2\'b8\'a6  HelpDetailView \'bf\'a1 \'b3\'d1\'b0\'dc\'c1\'e0\'bc\'ad \'c0\'a5\'c6\'e4\'c0\'cc\'c1\'f6\'b8\'a6 \'b7\'ce\'b5\'f9\'c7\'cf\'b0\'d4 \'b8\'b8\'b5\'eb\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 - (\cf2 void\cf0 )tableView:(\cf6 UITableView\cf0  *)tableView didSelectRowAtIndexPath:(\cf6 NSIndexPath\cf0  *)indexPath\
+\{\
+	\cf2 if\cf0  (\cf3 detailView\cf0  == \cf2 nil\cf0 ) \{\
+		\cf3 detailView\cf0  = [[\cf3 HelpDetailView\cf0  \cf4 alloc\cf0 ]\
+					  \cf4 initWithNibName\cf0 :\cf5 @"HelpDetailView"\cf0  \cf4 bundle\cf0 :\cf2 nil\cf0 ];\
+	\}\
+    \cf3 detailView\cf0 .\cf6 title\cf0  = [\cf3 keys\cf0  \cf4 objectAtIndex\cf0 :[indexPath \cf4 row\cf0 ]];\
+	\cf3 detailView\cf0 .\cf3 sName\cf0  = [\cf3 steps\cf0  \cf4 objectForKey\cf0 :[\cf3 keys\cf0  \cf4 objectAtIndex\cf0 :[indexPath \cf4 row\cf0 ]]];\
+	[\cf2 self\cf0 .\cf6 navigationController\cf0  \cf4 pushViewController\cf0 :\cf3 detailView\cf0  \cf4 animated\cf0 :\cf2 YES\cf0 ];\
+\}
+\f1\fs24 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+
+\b 2-6. HelpDetailView
+\b0 \
+- HelpView 
+\f0 \'bf\'a1\'bc\'ad \'bc\'b3\'c1\'a4\'c7\'d1 \'c0\'a5\'c6\'e4\'c0\'cc\'c1\'f6\'b8\'a6 \'b7\'ce\'b5\'e5
+\f1 \
+- WebView
+\f0 \'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d1 \'b0\'a3\'b4\'dc\'c7\'d1 \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa \'b1\'b8\'bc\'ba ( back, forward, go \'b9\'f6\'c6\'b0, \'c1\'d6\'bc\'d2\'c3\'a2 \'b5\'ee )
+\f1 \
+\
+- 
+\f0 \'c1\'d6\'bc\'d2\'c3\'a2\'bf\'a1\'bc\'ad \'b8\'ae\'c5\'cf\'c5\'b0\'b8\'a6 \'c0\'db\'b5\'bf\'c7\'cf\'b0\'d4 
+\f2\fs22 \CocoaLigature0 UITextFieldDelegate
+\f0  \'c7\'c1\'b7\'ce\'c5\'e4\'c4\'dd \'c0\'cc\'bf\'eb
+\f1\fs24 \CocoaLigature1 \
+\pard\tx529\pardeftab529\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 - (\cf2 BOOL\cf0 )textFieldShouldReturn:(\cf6 UITextField\cf0  *)textField\
+\{\
+    [\cf3 addrTxt\cf0  \cf4 resignFirstResponder\cf0 ];\
+    [\cf2 self\cf0  \cf8 goURL\cf0 :\cf2 self\cf0 ];\
+   \
+    \cf2 return\cf0  \cf2 YES\cf0 ;\
+\}
+\f1\fs24 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+- 
+\f0 \'c6\'e4\'c0\'cc\'c1\'f6\'b0\'a1 \'b4\'d9 \'b7\'ce\'b5\'e5 \'b5\'c7\'b1\'e2 \'c0\'fc\'b1\'ee\'c1\'f6\'b4\'c2 
+\f1 Loading\'85
+\f0 \'b9\'ae\'b1\'b8\'b8\'a6 \'ba\'b8\'bf\'a9\'c1\'d6\'b0\'ed,
+\f1  
+\f0 \'b4\'d9 \'b7\'ce\'b5\'e5\'b0\'a1 \'b5\'c7\'b8\'e9 \'b7\'bb\'b4\'f5\'b8\'a6 \'c7\'d4. 
+\f2\fs22 \cf6 \CocoaLigature0 UIWebViewDelegate 
+\f0 \'c7\'c1\cf0 \'b7\'ce\'c5\'e4\'c4\'dd \'c0\'cc\'bf\'eb.
+\f1\fs24 \CocoaLigature1 \
+\pard\tx529\pardeftab529\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 - (\cf2 void\cf0 )webViewDidStartLoad:(\cf6 UIWebView\cf0  *)webView\
+\{\
+    [\cf2 self\cf0 .\cf3 webView\cf0  \cf4 setHidden\cf0 :\cf2 YES\cf0 ];\
+    [\cf3 addrTxt\cf0  \cf4 resignFirstResponder\cf0 ];\
+\}\
+\
+- back/forward 
+\f0 \'b5\'c9 \'c6\'e4\'c0\'cc\'c1\'f6\'bf\'a1 \'b4\'eb\'c7\'d1 \'c1\'a4\'ba\'b8\'b0\'a1 \'be\'f8\'c0\'b8\'b8\'e9 \'b0\'a2 \'b9\'f6\'c6\'b0 
+\f2 disable 
+\f0 \'c3\'b3\'b8\'ae.
+\f2  
+\f0 \'c7\'f6\'c0\'e7 \'c0\'a5\'c1\'d6\'bc\'d2\'b8\'a6 \'c1\'d6\'bc\'d2\'c3\'a2\'bf\'a1 \'c7\'a5\'bd\'c3.
+\f2 \
+- (\cf2 void\cf0 )webViewDidFinishLoad:(\cf6 UIWebView\cf0  *)webView\
+\{\
+    [\cf2 self\cf0 .\cf3 webView\cf0  \cf4 setHidden\cf0 :\cf2 NO\cf0 ];\
+    \
+    [\cf3 backBtn\cf0  \cf4 setEnabled\cf0 :[\cf2 self\cf0 .\cf3 webView\cf0  \cf4 canGoBack\cf0 ]];\
+    [\cf3 forwardBtn\cf0  \cf4 setEnabled\cf0 :[\cf2 self\cf0 .\cf3 webView\cf0  \cf4 canGoForward\cf0 ]];\
+    \
+    \cf3 addrTxt\cf0 .\cf6 text\cf0  = \cf3 sName\cf0  = \cf2 self\cf0 .\cf3 webView\cf0 .\cf6 request\cf0 .\cf4 URL\cf0 .\cf4 absoluteString\cf0 ;\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+- 
+\f0 \'b1\'e2\'ba\'bb\'c0\'fb\'c0\'b8\'b7\'ce\'b4\'c2 \'b9\'f6\'c6\'b0\'b5\'e9 \'b9\'d7 \'c1\'d6\'bc\'d2\'c3\'a2\'c0\'bb 
+\f1 hide 
+\f0 \'bd\'c3\'c5\'b0\'b0\'ed,
+\f1  
+\f0 \'bd\'ba\'c5\'a9\'b7\'d1\'c0\'cc \'b4\'d9 \'b5\'c7\'b0\'ed\'b3\'ad \'b5\'da 
+\f1 1
+\f0 \'c3\'ca\'c8\'c4\'bf\'a1 \'b3\'aa\'c5\'b8\'b3\'aa\'b5\'b5\'b7\'cf \'c7\'a5\'c7\'f6.
+\f1  
+\f0 \'bd\'ba\'c5\'a9\'b7\'d1\'c1\'df\'bf\'a1\'b5\'b5 
+\f1 hide 
+\f0 \'c3\'b3\'b8\'ae. 
+\f2\fs22 \CocoaLigature0 UIScrollViewDelegate 
+\f0 \'c7\'c1\'b7\'ce\'c5\'e4\'c4\'dd \'c0\'cc\'bf\'eb.
+\f1\fs24 \CocoaLigature1 \
+\pard\tx529\pardeftab529\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 - (\cf2 void\cf0 )scrollViewWillBeginDragging:(\cf6 UIWebView\cf0  *)webView\
+\{\
+    [\cf3 addrTxt\cf0  \cf4 resignFirstResponder\cf0 ];\
+    \
+    [\cf3 timer\cf0  \cf4 invalidate\cf0 ];\
+    \cf3 flag\cf0  = \cf2 YES\cf0 ;\
+    [\cf2 self\cf0  \cf8 showAndHide\cf0 :\cf3 timer\cf0 ];\
+\}\
+\
+- (\cf2 void\cf0 )scrollViewDidEndDragging:(\cf6 UIWebView\cf0  *)webView willDecelerate:(\cf2 BOOL\cf0 )decelerate\
+\{\
+    [\cf3 timer\cf0  \cf4 invalidate\cf0 ];\
+    \cf3 flag\cf0  = \cf2 NO\cf0 ;\
+    \cf3 timer\cf0  = [\cf6 NSTimer\cf0  \cf4 scheduledTimerWithTimeInterval\cf0 :\cf7 1.0\cf0  \cf4 target\cf0 :\cf2 self\cf0  \cf4 selector\cf0 :\cf2 @selector\cf0 (showAndHide:) \cf4 userInfo\cf0 :\cf2 nil\cf0  \cf4 repeats\cf0 :\cf2 NO\cf0 ];\
+\}
+\f1\fs24 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+
+\b 2-7. AboutView\
+
+\b0 - 
+\f0 \'c0\'cc\'b9\'cc\'c1\'f6\'bf\'cd \'b0\'a3\'b4\'dc\'c7\'d1 \'b9\'ae\'b1\'b8\'b8\'a6 
+\f1 nib 
+\f0 \'c6\'c4\'c0\'cf\'b7\'ce \'c7\'a5\'bd\'c3
+\f1 \
+\
+\
+\
+}
